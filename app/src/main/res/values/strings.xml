@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">foodApp</string>
+    <string name="title_text">Simple way to find Tasty food</string>
+    <string name="price_text">20$</string>
+    <string name="title_card_text">vegan salad bowl</string>
+    <string name="sub_card_text">with read tomato</string>
+    <string name="pragraph_card_text">To understand the challenges faced by e-commerce companies</string>
+    <string name="pragraph_card_text2">This article explains the usage
+        of an Android library which is helpful to import and use external SQLite
+        database into your Android application. It has been a problem for Android
+        developers to release an application with some existing rows of data in the database.database into your Android application. It has been a problem for Android
+        developers to release an application with some existing rows of data in the database.
+         .</string>
+    <string name="size_card_text">420kgr</string>
+</resources>

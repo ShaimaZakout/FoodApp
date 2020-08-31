@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+     >
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="342dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/card_background"
+        android:padding="18dp">
+
+
+        <TextView
+            android:id="@+id/price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/price_text"
+            android:textColor="#EC3672"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price_text"
+            android:layout_marginTop="65dp"
+            android:text="@string/title_card_text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sub_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_card_text"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub_card_text"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/pragraph_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sub_card_text"
+            android:layout_marginTop="26dp"
+            android:text="@string/pragraph_card_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/size_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pragraph_card_text"
+            android:layout_marginTop="26dp"
+            android:text="@string/size_card_text"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="138dp"
+        android:layout_height="143dp"
+        android:background="@drawable/shape_background"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/food_img"
+        android:layout_width="216dp"
+        android:layout_height="198dp"
+        android:src="@drawable/image_1" />
+
+
+</RelativeLayout>

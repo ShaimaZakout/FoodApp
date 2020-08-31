@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/menu_img_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/ic_menu"
+        />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="211dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/menu_img_id"
+        android:layout_marginTop="5dp"
+        android:text="@string/title_text"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/ed_background"
+        android:drawableLeft="@drawable/ic_search"
+        android:padding="12dp"
+        android:id="@+id/search"
+        android:inputType="text"
+        android:drawablePadding="10dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+       />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape2_background"
+         android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_plus"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

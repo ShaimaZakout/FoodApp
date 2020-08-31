@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".detailsActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_backward" />
+
+    <ImageView
+        android:id="@+id/food_img"
+        android:layout_width="match_parent"
+        android:layout_height="308dp"
+        android:src="@drawable/image_1_big" />
+
+
+    <TextView
+        android:id="@+id/price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_img"
+        android:layout_alignParentRight="true"
+        android:text="@string/price_text"
+        android:textColor="#EC3672"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title_card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_img"
+        android:text="@string/title_card_text"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub_card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_card_text"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub_card_text"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/pragraph_card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_card_text"
+        android:layout_marginTop="10dp"
+        android:text="@string/pragraph_card_text2"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         android:background="@drawable/btn_background"
+        android:padding="18dp"
+        android:id="@+id/bag_id">
+
+        <TextView
+            android:id="@+id/add_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Add to bag"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_forward" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape2_background"
+        android:src="@drawable/ic_bag"
+        android:padding="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape3_background"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#EC3672"
+        android:textStyle="bold"
+        android:id="@+id/counter_id"
+
+
+        />
+
+</RelativeLayout>
